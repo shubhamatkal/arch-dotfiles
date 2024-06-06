@@ -3,6 +3,7 @@
 alias sp="sudo pacman"
 alias update-mirrors="rate-mirrors --allow-root --protocol https arch | sudo tee /etc/pacman.d/mirrorlist"
 alias vim="nvim"
+set -x EDITOR nvim
 #auto using startx when in tty at start
 if test -z "$DISPLAY"
   # Check if on tty1 (optional, see note below)
